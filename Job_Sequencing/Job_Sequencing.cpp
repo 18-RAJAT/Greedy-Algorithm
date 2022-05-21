@@ -17,7 +17,7 @@ int main()
         cin>>deadline;
         job.push_back(make_pair(profit,deadline));
     }
-    sort(job.begin(),job.end());
+    sort(job.begin(),job.end(),compare);
     int maxEndTime=0;
     for(int i=0;i<n;++i)
     {
