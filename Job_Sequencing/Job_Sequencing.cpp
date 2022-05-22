@@ -9,10 +9,12 @@ int main()
 {
     vector<pair<int,int>>job;
     int n,profit,deadline;
+    cout<<"Enter the number of ID's:"<<"\n";
     cin>>n;
 
     for(int i=0;i<n;++i)
     {
+        cout<<"Enter the PROFIT and DEADLINE"<<"\n";
         cin>>profit;
         cin>>deadline;
         job.push_back(make_pair(profit,deadline));
@@ -43,5 +45,5 @@ int main()
             maxProfit += job[i].first;
         }
     }
-    cout<<count<<" "<<maxProfit<<"\n";
+    cout<<"The Count:"<<count<<" "<<"The Profit:"<<maxProfit<<"\n";
 }
